@@ -1,0 +1,17 @@
+{
+  "name": "beast-tamer-wild-realm",
+  "version": "2.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "express": "5.2.1",
+    "socket.io": "4.8.4"
+  }
+}
