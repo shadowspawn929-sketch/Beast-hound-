@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#070913">
+<title>Beast Tamer: Wild Realm Online</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="topbar"><div class="brand"><div class="brand-title">BEAST TAMER</div><div class="brand-sub">WILD REALM ONLINE</div></div><div class="rank-box"><span id="rankLabel">E</span><small>RANK</small></div><button class="icon-btn" id="menuBtn">☰</button></div>
+<div id="playerPanel" class="glass panel"><div class="row between"><strong>Hunter</strong><span id="levelText">Lv.1</span></div><div class="bar hp"><span id="playerHpBar"></span></div><div class="tiny-row"><span id="playerHpText">120 / 120</span><span id="xpText">XP 0 / 145</span></div></div>
+<div id="battleBanner" class="hidden glass"></div><div id="hint" class="glass">Explore the wilds. Approach a beast and press <b>ENGAGE</b>.</div>
+<div id="actions" class="action-dock"><button data-action="engage" class="action main-action">ENGAGE</button><button data-action="attack" class="action">ATTACK</button><button data-action="tame" class="action">TAME</button><button data-action="potion" class="action">POTION</button><button data-action="extract" class="action shadow-action">EXTRACT</button><button data-action="run" class="action">RUN</button></div>
+<div id="joystick"><button data-move="up">▲</button><div class="joy-mid"><button data-move="left">◀</button><button id="stopBtn">●</button><button data-move="right">▶</button></div><button data-move="down">▼</button></div>
+<div id="sideButtons"><button id="teamBtn">TEAM</button><button id="bagBtn">BAG</button><button id="onlineBtn">ONLINE</button><button id="guildBtn">GUILD</button><button id="tradeBtn">TRADE</button><button id="shopBtn">SHOP</button><button id="saveBtn">SAVE</button></div>
+<div id="statusToast"></div>
+<div id="panelOverlay" class="overlay hidden"><div class="modal glass"><div class="modal-head"><h2 id="modalTitle">Team</h2><button id="closeModal">✕</button></div><div id="modalBody"></div></div></div>
+<div id="startScreen" class="overlay"><div class="start-card glass"><div class="sigil">✦</div><h1>BEAST TAMER</h1><p>WILD REALM ONLINE</p><div class="feature-line">3D • MULTIPLAYER • GUILD • TRADE • SHOP • SHADOWS</div><button id="startBtn" class="start-btn">ENTER THE REALM</button><div class="small-note">Your online profile is saved on the game server.</div></div></div>
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="/game.js"></script>
+<script type="module" src="/online.js"></script>
+</body>
+</html>
