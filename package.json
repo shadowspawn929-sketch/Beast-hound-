@@ -1,0 +1,13 @@
+{
+  "name": "beast-tamer-wild-realm-ultimate",
+  "version": "3.0.0",
+  "private": true,
+  "description": "2D mobile-first online creature-taming RPG",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
